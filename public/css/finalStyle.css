@@ -1,0 +1,162 @@
+@font-face{
+  src: url("../fonts/NexaBold.otf");
+  font-family: nexa;
+}
+@font-face{
+  src: url("../fonts/Cloud-Light.otf");
+  font-family: cloud;
+}
+.well{
+  font-family: nexa;
+}
+.form-control{
+  border-radius: 0px;
+  background-color: transparent;
+  color: white;
+  font-family: cloud;
+}
+.hover{
+color: #AAA;
+transition: 0.3s;
+text-decoration: none;
+}
+.hover:hover{
+color: #fff;
+text-decoration: none;
+}
+@media screen and (max-width: 759px) {
+  .header{
+    font-size: 24px;
+  }
+  .desc{
+    font-size: 20px;
+  }
+  .hello{
+    font-size: 20px;
+    font-family: cloud;
+  }
+}
+@media screen and (min-width: 760px) {
+  .header{
+    font-size: 48px;
+  }
+  .desc{
+    font-size: 32px;
+  }
+  .hello{
+    font-size: 32px;
+    font-family: cloud;
+  }
+}
+body{
+  margin:0;
+  padding: 0;
+  font-family: cloud;
+  background: url(../images/bg.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+html{
+  margin:0;
+  padding: 0;
+
+}
+.header{
+  padding: 15px;
+}
+.swal-button {
+  width: 100%;
+  padding: 7px 19px;
+  border-radius: 2px;
+  background-color: #4962B3;
+  font-size: 15px;
+  border: 1px solid #3e549a;
+  color: #fff;
+  margin: 0;
+}
+
+.swal-footer {
+    text-align: center;
+    padding-top: 13px;
+    margin-top: 13px;
+    padding: 13px 16px;
+    border-radius: inherit;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.nanobar .bar {
+  background: #29b6f6;
+  border-radius: 0px;
+  box-shadow: 0 0 10px #16D39A;
+  height: 2px;
+}
+
+.img-container {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered {
+   text-align: center;
+   font-size: 0;
+}
+.centered > div {
+   float: none;
+   display: inline-block;
+   text-align: left;
+   font-size: 13px;
+}
+
+.img-container:hover .image {
+  opacity: 0.6;
+}
+
+.img-container:hover .middle {
+  opacity: 1;
+}
+
+
+.text {
+  background-color: #000;
+  color: white;
+  font-size: 16px;
+  padding: 16px 60px;
+  font-family: nexa;
+}
+
+.text2 {
+  background-color: #000;
+  color: white;
+  font-size: 14px;
+  padding: 16px 30px;
+  font-family: nexa;
+  border-radius: 300px;
+}
+.modal-title{
+  font-family: cloud;
+}

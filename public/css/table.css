@@ -1,0 +1,33 @@
+@media screen and (max-width: 640px) {
+table {
+    width: 90%;
+    border: 1px solid #000000;
+    overflow-x: scroll;
+    border-collapse: collapse;
+	display: block; 
+}
+table td, table th {
+    border: 1px solid #000000;
+    background-color: #FFFFFF;
+    text-align: middle;
+    color : #000000;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.USER_ID {
+    width: auto;
+}
+.NICKNAME {
+    width: auto;
+}
+.TEL {
+    width: auto;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.answer1, .answer2, .answer3, .answer4, .answer5, .answer6, .answer7, .answer8, .answer9, .answer10, .approve, .nine, .picture {
+    width: auto;
+}
+
