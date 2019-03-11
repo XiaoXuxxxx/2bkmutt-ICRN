@@ -146,7 +146,7 @@ $datarun = substr_replace("00",$dept,2-strlen($dept));
       $sqlt="SELECT * FROM departments WHERE camp_dept_id = '$dataa' ";
       $dbquery=mysqli_query($con,$sqlt); 
       $resultst=mysqli_fetch_array($dbquery);
-      $name_de =$resultst ['department_full-th'];
+      $name_de =$resultst ['department_full_th'];
       echo $name_de;
 }
        ?>
