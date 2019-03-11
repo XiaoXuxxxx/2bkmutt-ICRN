@@ -32,7 +32,7 @@
     <?php
     use App\User;
     use App\UserProfile;
-    $recentUser = Auth::user();
+    $recentUser = Auth::user(); 
     $user = UserProfile::where('user_id','=',$recentUser->id)->first();
     ?>
   </head>
