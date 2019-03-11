@@ -54,23 +54,23 @@ $today = date("Y-m-d");
   <div class="panel-body">
     <select class="form-control" name="dateSelect">
       <option><?php echo $today;?></option>
-      <option>2018-03-19</option>
-      <option>2018-03-20</option>
-      <option>2018-03-21</option>
-      <option>2018-03-22</option>
-      <option>2018-03-23</option>
-      <option>2018-03-26</option>
-      <option>2018-03-27</option>
-      <option>2018-03-28</option>
-      <option>2018-03-29</option>
-      <option>2018-03-30</option>
-      <option>2018-03-02</option>
-      <option>2018-03-03</option>
-      <option>2018-03-04</option>
-      <option>2018-03-05</option>
-      <option>2018-03-06</option>
-      <option>2018-03-09</option>
-      <option>2018-03-10</option>
+        <option>2018-03-19</option>
+        <option>2018-03-20</option>
+        <option>2018-03-21</option>
+        <option>2018-03-22</option>
+        <option>2018-03-23</option>
+        <option>2018-03-26</option>
+        <option>2018-03-27</option>
+        <option>2018-03-28</option>
+        <option>2018-03-29</option>
+        <option>2018-03-30</option>
+        <option>2018-03-02</option>
+        <option>2018-03-03</option>
+        <option>2018-03-04</option>
+        <option>2018-03-05</option>
+        <option>2018-03-06</option>
+        <option>2018-03-09</option>
+        <option>2018-03-10</option>
     </select>
   </div>
   <div class="panel-footer">

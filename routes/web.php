@@ -253,18 +253,28 @@ Route::group(['middleware' => ['web', 'auth']], function () {
         Route::post('/magic/staff-registration/finish', 'StaffProfileRegisController@finish');
 
         Route::get('/tools/staffdata-viewer','StaffDataViewerController@show');
-	Route::get('/Protocol/checkList', function () {
+	    
+        Route::get('/Protocol/checkList', function () {
                 return view('checkList');
         });
 
 
 
-	Route::get('/Protocol/checkFirstTime', function(){
-		return view('checkFirst');
-	});
-	Route::get('/Protocol/checkFinishRegis', function(){
-		return view('checkRegis');
-	});
+    	Route::get('/Protocol/checkFirstTime', function(){
+    		return view('checkFirst');
+    	});
+    	Route::get('/Protocol/checkFinishRegis', function(){
+    		return view('checkRegis');
+    	});
+       
+
+        Route::get('/Protocol/checkAll', function () {
+                return view('all.index');
+        });
+        Route::post('/Protocol/checkAll', function(){
+                    return view('all.index');
+        });
+
     });
 
     Route::group(['middleware' => ['role:admin']], function(){
