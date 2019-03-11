@@ -4,7 +4,7 @@
 @section('content')
     @include('components.title', [
         "title" => "ICRN Database Abstract 2BKMUTT Camp",
-        "desc" => " Created by WRN.S | 2BKMUTT#15"
+        "desc" => " Created by AOMCPE32 | 2B-KMUTT"
     ])
 
 <!DOCTYPE html>
@@ -37,11 +37,9 @@ $con = mysqli_connect($host,$user,$pass,$db);
 <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
     <div class="label label-info">Select LAB:</div>
-  <input type="radio" value="1" name="inter"> ค้นหาต่างชาติ</input> 
-<input disabled type="text" class="form-control" placeholder="Search By Command"  name="room">    
+  <!-- <input type="radio" value="1" name="inter"> ค้นหาต่างชาติ</input>     -->
 <select name="sort_type" class="form-control">
-    <option value = "order by dept_id ASC">---Sort By LAB---</option>
-  
+    <option value = "order by dept_id ASC">Please Select LAB</option>
     <?php
 
     $mute = "department_full-th";
@@ -94,12 +92,12 @@ $item = 1;
   <tr bgcolor="#fff">
     <th width="10" bgcolor="#fff" align="center">ที่</th>
    
-    <th > <div align="center">ชื่อ</div></th>   
-	<th>ชื่อเล่น</th>
+    <th > <div align="center">Name</div></th>   
+	<th>Nickname</th>
       <th>LAB</th>
     <th>ID_DB</th>
-    <th>ชื่อโปรเจค</th>
-    <th>ชื่ออาจารย์ที่ปรึกษา</th>
+    <th>Project Name</th>
+    <th>Adviser Name</th>
     <th>File</th>
 
   </tr>

@@ -69,7 +69,7 @@
                 "display" => "Birhdate",
 		"html" => '
 		<div class="input-group date">
-  			<input type="text" class="form-control" name="birth_date"><span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+  			<input type="text" class="form-control" value="' . $user->birth_date . '" name="birth_date"><span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
 		</div>',
                 "required" => true
             ],

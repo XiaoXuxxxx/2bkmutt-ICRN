@@ -13,8 +13,8 @@
     <div id="camera" style="width:640px; height:480px;"></div>
     <div id="result" style="width:320px; height:240px; display: none;"></div>
     <br>
-    <!-- <button type="button" class="btn btn-primary btn-lg" id="snapshot" style="display: none;"><i class="fa fa-camera"></i> ถ่ายรูป</button> -->
-    <div id="pic-confirmation" style="display: block;">
+    <button type="button" class="btn btn-primary btn-lg" id="snapshot" style="display: none;"><i class="fa fa-camera"></i> ถ่ายรูป</button>
+    <div id="pic-confirmation" style="display: none;">
         <div class="btn-group">
             <button type="button" class="btn btn-success" id="confirmed"><i class="fa fa-check"></i> ใช้รูปนี้</button>
             <button type="button" class="btn btn-danger" id="reject"><i class="fa fa-times"></i> ถ่ายใหม่</button>
@@ -33,7 +33,7 @@
             <input type="hidden" id="camp_id" name="camp_id" value="{{ $user->camp_id }}">
             <input type="submit" id="first-time-next-step-btn" class="btn btn-primary" value="ดำเนินการต่อ">
         </form>
-	<br>
+    <br>
         <form action="{{ url('/magic/first-time-registration/informationEN') }}" method="post">
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
             <input type="hidden" id="camp_id" name="camp_id" value="{{ $user->camp_id }}">
