@@ -70,6 +70,9 @@
 	<div class="col-md-4">
 		<a class="btn-b btn-5 btn-block" href="{{ url('/VoteResult/StarCount') }}"><i class="fa fa-comment"></i> Vote Result</a>
 	</div>
+  <div class="col-md-4">
+    <a class="btn-b btn-2 btn-block" href="{{ url('/Protocol/checkAll') }}"><i class="fa fa-search"></i> AttenCheck Checking</a>
+  </div>
 </div>
 
 <br><br>
