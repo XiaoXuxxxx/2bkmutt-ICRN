@@ -58,10 +58,10 @@
                 ?>
 		| {{ $row['faculty_abbr'] }}</h6>
 
-		<h6>คณะที่ดูแล:</label> {{ $row['faculty_full-th'] }}</h6>
-                <h6>ภาควิชาที่ดูแล:</label> {{ $row['department_full-th'] }}</h6>
-		<h6>Faculty:</label> {{ $row['faculty_full-en'] }}</h6>
-                <h6>Department:</label> {{ $row['department_full-en'] }}</h6>
+		<h6>คณะที่ดูแล:</label> {{ $row['faculty_full_th'] }}</h6>
+                <h6>ภาควิชาที่ดูแล:</label> {{ $row['department_full_th'] }}</h6>
+		<h6>Faculty:</label> {{ $row['faculty_full_en'] }}</h6>
+                <h6>Department:</label> {{ $row['department_full_en'] }}</h6>
 
 		<?php
 		}}

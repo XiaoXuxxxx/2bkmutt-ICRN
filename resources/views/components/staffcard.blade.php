@@ -22,8 +22,8 @@
                 <li><label>SEC:</label> {{ $p['sec'] }}</li>
                 <li><label>เบอร์โทรศัพท์:</label> {{ $p['telephone_no'] }}</li>
                 <li><label>วันเกิด:</label> {{ date_format(date_create($p['birth_date']), 'F j, Y') }}</li>
-                <li><label>คณะที่ดูแล:</label> {{ $p['department']['faculty_full-th'] }}</li>
-                <li><label>ภาควิชาที่ดูแล:</label> {{ $p['department']['department_full-th'] }}</li>
+                <li><label>คณะที่ดูแล:</label> {{ $p['department']['faculty_full_th'] }}</li>
+                <li><label>ภาควิชาที่ดูแล:</label> {{ $p['department']['department_full_th'] }}</li>
             </ul>
             </div>
             <div class="col-sm-5 data-col">
