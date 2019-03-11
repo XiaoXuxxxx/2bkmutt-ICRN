@@ -37,7 +37,7 @@
             <div class="col-sm-6">
                 <div class="input-group">
                     <label class="radio-inline">
-                      <input type="radio" name="role" required value="usertest"> User(for testsystem)
+                      <input type="radio" name="role" required value="user"> User(for test system)
                     </label>
 		    <label class="radio-inline">
                       <input type="radio" name="role" required value="staff"> Staff(for Freeday checking)

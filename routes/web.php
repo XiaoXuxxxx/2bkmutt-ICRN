@@ -114,14 +114,17 @@ Route::group(['middleware' => ['web', 'auth']], function () {
        return redirect('/');
     });
 
+
+//Router User 
+
     Route::group(['middleware' => ['role:admin|user|usertest']], function(){
         Route::get('profile/labreport', 'LabReportController@show');
         Route::post('profile/labreport', 'LabReportController@submit');
-//	Route::get('profile/starvote/viewpicture/wa','');
-	Route::get('checkAttendanceLog', 'AttendanceCheckingController@log');
+//	    Route::get('profile/starvote/viewpicture/wa','');
+	    Route::get('checkAttendanceLog', 'AttendanceCheckingController@log');
 
-//        Route::get('final/{params}', 'FinalStarVoteController@getForReturn');
-  //      Route::post('final/{params}', 'FinalStarVoteController@postToSave');
+//      Route::get('final/{params}', 'FinalStarVoteController@getForReturn');
+//      Route::post('final/{params}', 'FinalStarVoteController@postToSave');
     });
 
     Route::group(['middleware' => ['role:admin|senior|junior|user|usertest|staff']], function(){
@@ -138,8 +141,6 @@ Route::group(['middleware' => ['web', 'auth']], function () {
        		return view('starvoteResult');
     	});
 
-
-//WWWWWWWWWWWWWWWWWWWW TEST
 	 Route::get('tools/labreport-print', 'LabReportController@showSummary');
 
         Route::get('/tools/labreport-print', function () {
@@ -160,7 +161,7 @@ Route::group(['middleware' => ['web', 'auth']], function () {
     Route::group(['middleware' => ['role:admin|senior|junior']], function(){
 
 	Route::get('final/{params}', 'FinalStarVoteController@getForReturn');
-        Route::post('final/{params}', 'FinalStarVoteController@postToSave');
+    Route::post('final/{params}', 'FinalStarVoteController@postToSave');
 	Route::get('/leaflet2/status', 'leafletController@show');
 	Route::post('/leaflet2/status', 'leafletController@Approve');
 	Route::get('/protocol/Staffuser', function () {
@@ -242,7 +243,7 @@ Route::group(['middleware' => ['web', 'auth']], function () {
         Route::post('magic/first-time-registration/informationTH', 'FirstTimeRegistrationController@informationTH');
         Route::post('magic/first-time-registration/RFIDth', 'FirstTimeRegistrationController@RFIDth');
         Route::post('magic/first-time-registration/informationEN', 'FirstTimeRegistrationController@informationEN');
-	Route::post('magic/first-time-registration/register', 'FirstTimeRegistrationController@register');
+	    Route::post('magic/first-time-registration/register', 'FirstTimeRegistrationController@register');
         Route::post('magic/first-time-registration/finish', 'FirstTimeRegistrationController@finish');
 
         Route::get('tools/master-resetpassword', 'MasterResetPasswordController@show');
