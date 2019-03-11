@@ -50,7 +50,7 @@ $con = mysqli_connect($host,$user,$pass,$db);
     while ( $d=mysqli_fetch_assoc($db)) {
          $num = $d['camp_dept_id'];
 $cod = "'";
-      echo "<option value='".number_format($num)."'>".$num." ".$d['department_abbr']." [".$d['department_full-th']."]</option>";
+      echo "<option value='".number_format($num)."'>".$num." ".$d['department_abbr']." [".$d['department_full_th']."]</option>";
     }
     ?>
       </select> <br>
@@ -137,7 +137,7 @@ $datarun = substr_replace("00",$dept,2-strlen($dept));
       $sqlt="SELECT * FROM departments WHERE camp_dept_id = '$datarun' ";
       $dbquery=mysqli_query($con,$sqlt); 
       $resultst=mysqli_fetch_array($dbquery);
-      $name_de =$resultst ['department_full-th'];
+      $name_de =$resultst ['department_full_th'];
       echo $name_de;
        }else {
        
