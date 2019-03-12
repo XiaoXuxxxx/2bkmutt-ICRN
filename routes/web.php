@@ -34,6 +34,9 @@ Route::get('/phpmyadmin', function(){
 Route::get('/admin', function(){
         return view('errors.myadmin');
 });
+Route::get('/test', function () {
+    return view('auth/test');
+});
 
 
 
