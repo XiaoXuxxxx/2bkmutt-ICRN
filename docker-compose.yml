@@ -1,0 +1,34 @@
+version: "3.7"
+services:
+  app:
+    build:
+      args:
+        user: sammy
+        uid: 1000
+      context: ./
+      dockerfile: Dockerfile
+    working_dir: /var/www/
+    volumes:
+      - ./:/var/www
+
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_DATABASE: 2bkmutt-demo
+      MYSQL_ROOT_PASSWORD: root
+
+  phpmyadmin:
+    image: phpmyadmin:5.2.1
+    ports:
+      - 1111:80
+    environment:
+      PMA_HOST: db
+      PMA_USER: root
+      PMA_PASSWORD: root
+  nginx:
+    image: nginx:alpine
+    ports:
+      - 8000:80
+    volumes:
+      - ./:/var/www
+      - ./deployments/nginx:/etc/nginx/conf.d/
