@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>2BKMUTT16 :: ICRN-LoginPage</title>
+  <title>2BKMUTT18 :: ICRN-LoginPage</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
@@ -20,16 +20,16 @@
   </script>
 </head>
 <body>
-  
+
   <div class="limiter">
     <div class="container-login100">
       <div class="wrap-login100">
         <form class="login100-form validate-form login" id="login2" style="margin-top: 5rem" method="POST" action="{{ url('/login') }}">
            {!! csrf_field() !!}
           <span class="login100-form-title p-b-34">
-            2B-KMUTT #16
+            2B-KMUTT #18
           </span>
-          
+
           <div class="wrap-input100 rs1-wrap-input100 validate-input m-b-20" data-validate="Type Email">
             <input class="input100" type="email"  name="email" value="{{ old('email') }}" placeholder="Email">
             <span class="focus-input100"></span>
@@ -38,7 +38,7 @@
             <input class="input100" type="password" name="password" placeholder="Password">
             <span class="focus-input100"></span>
           </div>
-          
+
           <div class="container-login100-form-btn">
             <button class="login100-form-btn">
               <i class="fa fa-fw fa-check-square"></i>&nbsp;Sign In
@@ -60,8 +60,8 @@
       </div>
     </div>
   </div>
-  
-  
+
+
 
   <div id="dropDownSelect1"></div>
   <script src="vendor/jquery/jquery-3.2.1.min.js"></script>

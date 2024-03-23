@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="2B-KMUTT">
-    <meta name="description" content="ระบบยืนยันสิทธิ์ค่าย 2B-KMUTT รุ่นที่ 16">
-    <title>2B-KMUTT#16 - Confirmation</title>
+    <meta name="description" content="ระบบยืนยันสิทธิ์ค่าย 2B-KMUTT รุ่นที่ 18">
+    <title>2B-KMUTT#18 - Confirmation</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -23,19 +23,19 @@
     font-family: 'Athiti', sans-serif;
     }
     </style>
-    
+
   </head>
-  
+
   <body id="top" data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
     <?php
-   
+
     include ('auth/config.auth.php');
     include ('auth/user.class.php');
     if(!empty($_SESSION['citizen']) && !empty($_SESSION['user'])){
     header("Location: main.php?mod=home");
     }
     $userClass = new userClass();
-    
+
     /* Login Form */
     if (!empty($_POST['loginSubmit'])) {
         $citizen = $_POST['citizen'];
@@ -56,7 +56,7 @@
             <script type="text/javascript">
               swal("ผิดพลาด","กรุณาเข้าสู่ระบบ","error").then((value) => {
               window.location='index.php';
-            });       
+            });
         </script>
           <?php
         }
@@ -66,7 +66,7 @@
     <?php
     }
     }
-    
+
     ?>
     <div class="preloader">
       <div class="sk-spinner sk-spinner-pulse"></div>
@@ -78,7 +78,7 @@
           <div class="col-md-offset-1 col-md-10 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
             <img src="images/ontour.png" width="30%" class="wow fadeInUp" data-wow-delay="0.3s">
             <h1 class="wow fadeInUp" data-wow-delay="0.6s">Confirmation system</h1>
-            <p class="wow fadeInUp" data-wow-delay="0.9s">ระบบยืนยันสิทธิ์ค่าย 2B-KMUTT รุ่นที่ 16 <a rel="nofollow" href="#"></a></p>
+            <p class="wow fadeInUp" data-wow-delay="0.9s">ระบบยืนยันสิทธิ์ค่าย 2B-KMUTT รุ่นที่ 18 <a rel="nofollow" href="#"></a></p>
             <a href="#step1" class="btn btn-success btn-lg wow fadeInUp" data-wow-delay="1.2s"><i class="fa fa-check-square"></i> ยืนยันสิทธิ์</a>
             <a href="#check" class="btn btn-success btn-lg wow fadeInUp" data-wow-delay="1.2s"><i class="fa fa-search"></i> ตรวจสอบรายชื่อ</a>
           </div>
@@ -92,7 +92,7 @@
           <div class="col-md-offset-1 col-md-10 col-sm-12">
             <div class="col-lg-offset-1 col-lg-10 section-title wow fadeInUp" data-wow-delay="0.4s">
               <h1>sign-in</h1>
-              <p>ก่อนอื่นพี่ขอแสดงความยินดีกับน้องที่มีสิทธิ์ในการเข้าร่วมโครงการ 2B-KMUTT รุ่นที่ 16 ด้วยนะครับ ในขั้นตอนการยืนยันสิทธิ์ขึ้นแรกนี้ ให้น้องกรอกหมายเลขบัตรประชาชน 13 หลัก และวัน เดือน ปีเกิดในรูปแบบ xx/xx/xxxx </p>
+              <p>ก่อนอื่นพี่ขอแสดงความยินดีกับน้องที่มีสิทธิ์ในการเข้าร่วมโครงการ 2B-KMUTT รุ่นที่ 18 ด้วยนะครับ ในขั้นตอนการยืนยันสิทธิ์ขึ้นแรกนี้ ให้น้องกรอกหมายเลขบัตรประชาชน 13 หลัก และวัน เดือน ปีเกิดในรูปแบบ xx/xx/xxxx </p>
             </div>
             <form method="post" class="wow fadeInUp" data-wow-delay="0.8s">
               <div class="col-md-12 col-sm-12">
@@ -111,20 +111,20 @@
     <!-- Footer section -->
     <footer>
       <div class="container">
-        
+
         <div class="row">
           <div class="col-md-12 col-sm-12">
-            
+
             <ul class="social-icon">
               <li><a href="https://www.facebook.com/2BKMUTT.Fanpage/" class="fa fa-facebook wow fadeInUp" data-wow-delay="1.0s"></a></li>
               <li><a href="https://confirm.2bkmutt.com/" class="fa fa-globe wow fadeInUp" data-wow-delay="1.0s"></a></li>
             </ul>
-            <p class="wow fadeInUp"  data-wow-delay="1s" >2B-KMUTT GENERATION 16 | 2B-REGISTRAR10 </p>
-            
+            <p class="wow fadeInUp"  data-wow-delay="1s" >2B-KMUTT GENERATION 18 | 2B-REGISTRAR10 </p>
+
           </div>
-          
+
         </div>
-        
+
       </div>
     </footer>
     <!-- Back top -->

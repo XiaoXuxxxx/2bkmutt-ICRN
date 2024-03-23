@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <title>2B-KMUTT#16 - Confirmation</title>
+    <title>2B-KMUTT#18 - Confirmation</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -14,7 +14,7 @@
     <link rel="icon" href="images/icon.jpeg">
     <link rel="stylesheet" href="css/vegas.min.css">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.10/js/gijgo.min.js" type="text/javascript"></script>
@@ -47,7 +47,7 @@
     background: #4891da;
     font-weight: 300;
     letter-spacing: 2px;
-    
+
     }
     .btn-success2:hover{
     background: #64a9ee;
@@ -65,11 +65,11 @@
     # background-color: #304352;
     }
     </style>
-    
+
   </head>
   <body id="top" data-spy="scroll" bgcolor="#596975" data-offset="50" data-target=".navbar-collapse">
     <?php
-    
+
     include ('auth/config.auth.php');
     include ('auth/user.class.php');
     include ('auth/session.class.php');
@@ -87,7 +87,7 @@
         <div class="container">
           <div class="row">
             <div class=" col-lg-10 section-title wow fadeInUp" data-wow-delay="0.4s">
-              <img src="images/2bkmutt16.png" width="300"> <div style="padding: 10px;"></div>
+              <img src="images/2bkmutt18.png" width="300"> <div style="padding: 10px;"></div>
             </div>
             <div class="row">
               <div class="col-md-12 section-title wow fadeInUp" data-wow-delay="0.5s">
@@ -106,14 +106,14 @@
             </div>
           </section>
         </div>
-        
+
         <!-- Footer section -->
         <footer>
           <div class="container bg">
             <div class="row">
               <div class="col-md-12">
                 <center>
-                <font color="#fff"><p class="wow fadeInUp"  data-wow-delay="1s" >2bkmuttregis@gmail.com <br>2B-KMUTT GENERATION 16 | 2B-REGISTRAR10 <br></p>
+                <font color="#fff"><p class="wow fadeInUp"  data-wow-delay="1s" >2bkmuttregis@gmail.com <br>2B-KMUTT GENERATION 18 | 2B-REGISTRAR10 <br></p>
 
                 </font>
                 </center>
@@ -133,7 +133,7 @@
         <script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>
         <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
         <!--<script src="js/wow.min.js"></script>-->
-        
+
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
       </body>
     </html>

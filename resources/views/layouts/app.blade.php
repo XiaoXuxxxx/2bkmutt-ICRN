@@ -16,7 +16,7 @@
     <link type="text/css" rel="stylesheet" href="/css/table.css">
     <link rel="icon" type="image/jpeg" href="/img/logo_2b.jpeg" />
     <style>
-  
+
     /*    background: #d7f5ff;*/
     body {
     background: #fae9ff;
@@ -32,7 +32,7 @@
     <?php
     use App\User;
     use App\UserProfile;
-    $recentUser = Auth::user(); 
+    $recentUser = Auth::user();
     $user = UserProfile::where('user_id','=',$recentUser->id)->first();
     ?>
   </head>
@@ -41,7 +41,7 @@
       <!-- Sidebar Holder -->
       <nav id="sidebar">
         <div class="sidebar-header">
-          <h3><a href="/"><img src="/img/2b16.png" width="100%"></a></h3>
+          <h3><a href="/"><img src="/img/2b18.png" width="100%"></a></h3>
         </div>
         <!-- PROFILE IMAGES -->
         <div class="circle-img">
@@ -94,19 +94,19 @@
         <ul class="list-unstyled components">
           <li class="active">
             <p>Hello :: {{ Auth::user()->name}} ({{ Auth::user()->roles[0]->display_name}})</p>
-            
+
             <!--
             @role(['admin','senior','junior','staff'])
             <li><a href="{{ url('/tools/freeday-checking') }}" class="is-active"><i class="fa fa-list-alt"></i><span class="app-dashboard-sidebar-text"> Freeday Checking</span></a></li>
-            @endrole 
+            @endrole
             -->
-          
+
             @role(['user','usertest'])
             <li><a href="{{url('/')}}"><i class="fa fa-home"></i> 2BKMUTT Home</a></li>
             <li><a href="{{ url('/checkAttendanceLog') }}"><i class="fa fa-calendar-check-o"></i> Check Attendance Log</a></li>
             <li><a href="{{ url('/profile/starvote') }}">    <i class="fa fa-comments"></i> Star Vote</a></li>
             <li><a href="{{ url('profile/labreport')}}"><i class="fa fa-pencil-square-o"></i> Project Topic Submission </a></li>
-            
+
             @endrole
 
             <!-- Role User Test move to same Role User-->
@@ -117,13 +117,13 @@
             <li><a href="{{ url('/profile/starvote') }}">    <i class="fa fa-comments"></i> Star Vote</a></li>
             <li><a href="{{ url('profile/labreport')}}"><i class="fa fa-pencil-square-o"></i> Project Topic Submission </a></li>
             @endrole-->
-            
+
             @role(['junior','senior','admin'])
             <li><a href="{{url('/')}}"><i class="fa fa-home"></i> 2BKMUTT Home</a></li>
-            
+
             <li><a href="{{ url('/Protocol/checkList') }}"  class=is-active"><i class="glyphicon glyphicon-zoom-in"></i><span class="app-dashboard-sidebar-text"> Checking List System</span></a></li>
             <li><a href="{{ url('/System/Registration') }}" class="is-active"><i class="fa fa-pencil-square-o"></i><span class="app-dashboard-sidebar-text"> Registration System</a></li>
-            <li><a href="{{ url('/profile/starvote') }}">    <i class="fa fa-comments"></i> Star Vote</a></li>  
+            <li><a href="{{ url('/profile/starvote') }}">    <i class="fa fa-comments"></i> Star Vote</a></li>
             <!--
             <li><a href="{{ url('/leaflet')}}" class="is-active"><i class="fa fa-list-alt"></i> Leatflet System</a></li>
             -->
@@ -152,7 +152,7 @@
             @endrole
 
             <!-- Logout -->
-            
+
             <li><a href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();"><i class="fa fa-sign-out"></i>
@@ -162,7 +162,7 @@
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>
-           
+
           </ul>
           </nav>
           <!-- Page Content Holder -->
@@ -173,7 +173,7 @@
               <span></span>
               <span></span>
               </button>
-              
+
               @if (trim($__env->yieldContent('breadcrumb')))
               <?php $disable = true; ?>
               @else
@@ -201,6 +201,6 @@
           });
             });
           </script>
-          
+
         </body>
       </html>
