@@ -19,6 +19,7 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Install PHP extensions
 RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd
+RUN docker-php-ext-install mysqli && docker-php-ext-enable mysqli
 
 # Get latest Composer
 COPY --from=composer:2.2.23 /usr/bin/composer /usr/bin/composer
